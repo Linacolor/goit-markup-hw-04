@@ -127,6 +127,8 @@ color: #000000;
     margin-left: 50px;
 }
 .contacts-link { 
+    display: flex;
+    align-items: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -137,6 +139,21 @@ color: #000000;
 
 .contacts-link:hover, .contacts-link:focus {
     color: var(--accent-color);
+}
+.contacts-link::before {
+    content: "";
+   
+    margin-right: 10px;
+}
+.contacts-link.iconhover::before {
+    background-image: url(../images/hover.svg);
+    width: 16px;
+    height: 12px;
+}
+.contacts-link.smartphone::before {
+    background-image: url(../images/smartphone.svg);
+     width: 10px;
+    height: 16px;
 }
 
 /* ЗАГОЛОВКИ */
@@ -156,7 +173,8 @@ color: #000000;
     background-color: #2F303A;
     padding-top: 200px;
     padding-bottom: 200px;
-    
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/bg.jpg);
+    background-size: cover;
 }
 .hero-header {
     margin-bottom: 30px;
@@ -214,6 +232,17 @@ color: #000000;
 .advantages-paragraph {
     font-size: 14px;
     line-height: 1.7;
+}
+.thumb {
+    display: flex;
+    background-color: #F5F4FA;
+    width: 270px;
+    height: 120px;
+}
+.advantages-icon {
+    display: block;
+    width: 70px;
+    height: 70px;
 }
 
 /* секция чем мы занимаемся */
