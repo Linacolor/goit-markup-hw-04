@@ -314,11 +314,13 @@ color: #000000;
     height: 44px;
 
 }
-.social-list-link:hover, .social-list-link:focus {
+.social-list-link:hover,
+.social-list-link:focus {
     background-color: var(--accent-color);
 }
-.social-list-icon:hover,
-.social-list-icon:focus {
+
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon{
     fill: var(--white-text-color);
 }
 
